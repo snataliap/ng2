@@ -150,7 +150,7 @@ var ac_polyfills =
 /******/ 	__webpack_require__.oe = function(err) { console.error(err); throw err; };
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 377);
+/******/ 	return __webpack_require__(__webpack_require__.s = 252);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -726,7 +726,50 @@ module.exports = (__webpack_require__(0))(225)
 /* 249 */,
 /* 250 */,
 /* 251 */,
-/* 252 */,
+/* 252 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+// TODO(gdi2290): switch to DLLs
+
+Object.defineProperty(exports, "__esModule", { value: true });
+// Polyfills
+// import 'ie-shim'; // Internet Explorer 9 support
+// import 'core-js/es6';
+// Added parts of es6 which are necessary for your project or your browser support requirements.
+__webpack_require__(220);
+__webpack_require__(213);
+__webpack_require__(209);
+__webpack_require__(215);
+__webpack_require__(214);
+__webpack_require__(212);
+__webpack_require__(211);
+__webpack_require__(219);
+__webpack_require__(208);
+__webpack_require__(207);
+__webpack_require__(217);
+__webpack_require__(210);
+__webpack_require__(218);
+__webpack_require__(222);
+__webpack_require__(223);
+__webpack_require__(221);
+__webpack_require__(216);
+// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
+// import 'core-js/es6/promise';
+__webpack_require__(224);
+__webpack_require__(227);
+if (false) {
+    // Production
+}
+else {
+    // Development
+    Error.stackTraceLimit = Infinity;
+    /* tslint:disable no-var-requires */
+    __webpack_require__(226);
+}
+
+
+/***/ }),
 /* 253 */,
 /* 254 */,
 /* 255 */,
@@ -851,50 +894,7 @@ module.exports = (__webpack_require__(0))(225)
 /* 374 */,
 /* 375 */,
 /* 376 */,
-/* 377 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// TODO(gdi2290): switch to DLLs
-
-Object.defineProperty(exports, "__esModule", { value: true });
-// Polyfills
-// import 'ie-shim'; // Internet Explorer 9 support
-// import 'core-js/es6';
-// Added parts of es6 which are necessary for your project or your browser support requirements.
-__webpack_require__(220);
-__webpack_require__(213);
-__webpack_require__(209);
-__webpack_require__(215);
-__webpack_require__(214);
-__webpack_require__(212);
-__webpack_require__(211);
-__webpack_require__(219);
-__webpack_require__(208);
-__webpack_require__(207);
-__webpack_require__(217);
-__webpack_require__(210);
-__webpack_require__(218);
-__webpack_require__(222);
-__webpack_require__(223);
-__webpack_require__(221);
-__webpack_require__(216);
-// see issue https://github.com/AngularClass/angular2-webpack-starter/issues/709
-// import 'core-js/es6/promise';
-__webpack_require__(224);
-__webpack_require__(227);
-if (false) {
-    // Production
-}
-else {
-    // Development
-    Error.stackTraceLimit = Infinity;
-    /* tslint:disable no-var-requires */
-    __webpack_require__(226);
-}
-
-
-/***/ }),
+/* 377 */,
 /* 378 */,
 /* 379 */,
 /* 380 */,
