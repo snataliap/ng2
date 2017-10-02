@@ -1,14 +1,11 @@
 {
-  "vendor": {
-    "js": "/ng2/vendor.js"
-  },
   "main": {
-    "js": "/ng2/main.js"
+    "js": "/ng2/main.bundle.js"
   },
-  "main.min": {
-    "js": "/ng2/main.min.js"
+  "vendor": {
+    "js": "/ng2/vendor.bundle.js"
   },
   "polyfills": {
-    "js": "/ng2/polyfills.js"
+    "js": "/ng2/polyfills.bundle.js"
   }
 }
