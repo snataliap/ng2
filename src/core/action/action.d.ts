@@ -1,22 +1,29 @@
 import { Command } from '../command/command';
 
 /**
- * Use this class to connect q-grid [command](/doc/api/command.html) and UI. Usually action represents a button, but not necessary, custom template can be [used to](/doc/features/action-bar).
- * Note that even action doesn't populate UI, command should be still executable through the keyboard shortcut.
+ * Use this class to connect qgrid [command](/doc/api/command.html) and UI.
+ * Usually action represents a button, but not nessesary, custom template can be used to, 
+ * see [action bar example](/doc/features/action-bar). If action doesn't populate UI, 
+ * command still is executable through the keyboard shortcut.
  * 
- * ### Create an action.
+ * ### Create an action using qgrid facade.
  *
  * ```javascript
- * this.addRowCommand = 
- * 		new qgrid.Action(
- *			new qgrid.Command({	    
- *		  		execute: () => {
- *		     		const newRow = { id: 1, text: 'Lorem ipsum dolor sit amet' };
- *                  this.rows = this.rows.concat(newRow);
- *		   		},
- * 			}),
- * 			'Add Row'
- *		);
+ *	const addRowCommand = 
+ *		new qgrid.Action(
+ *	   		new qgrid.Command({	    
+ *	  			execute: () => {
+ *	     		const newRow = {
+ *			 		id: 1,
+ *			 		text: 'Lorem ipsum dolor sit amet'
+ *	      		};
+ *
+ *		 		gridModel.data({
+ *			 		rows: gridModel.data().rows.concat(newRow)
+ *		  		});
+ *	   		}),
+ *			'Add Row'
+ *  	});
  * ```
  *
  * ### Suggested Links
@@ -24,7 +31,6 @@ import { Command } from '../command/command';
  * * [Action Model](/doc/api/action-model.html)
  * * [Command](/doc/api/command.html)
  * * [Action Bar](/doc/feature/action-bar.html)
- * * [Grid Front](/doc/api/front.html)
  */
 export declare class Action {
 	constructor(command: Command, title?: string, icon?: string);

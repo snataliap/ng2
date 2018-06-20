@@ -1,5 +1,4 @@
 import { isString } from '../utility/kit';
-import { AppError } from '../infrastructure/error';
 
 export const key = getKey;
 export const index = getIndex;
